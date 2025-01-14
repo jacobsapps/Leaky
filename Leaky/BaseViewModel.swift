@@ -10,10 +10,6 @@ import Foundation
 /// Base class for view models in our SwiftUI app.
 ///
 class BaseViewModel: LeakDetectable {
-    func track() {
-        
-    }
-    
     init() {
         LeakDetector.shared.check(self)
     }

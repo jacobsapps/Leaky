@@ -10,7 +10,6 @@ import Synchronization
 
 protocol LeakDetectable: AnyObject {
     var maxInstances: Int { get }
-    func track()
 }
 
 extension LeakDetectable {
